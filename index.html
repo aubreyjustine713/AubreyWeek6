@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/004c631208.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather Application</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row cities">
+        <div class="col"><a href="#">London</a></div>
+        <div class="col"><a href="#">Uxbridge</a></div>
+        <div class="col"><a href="#">Newmarket</a></div>
+        <div class="col"><a href="#">Toronto</a></div>
+      </div>
+      <form id="search-form">
+        <div class="row">
+          <div class="col-8">
+            <input
+              type="text"
+              id="location-input"
+              placeholder="Enter a city"
+              autofocus="on"
+              autocomplete="off"
+              class="form-control shadow-sm"
+            />
+          </div>
+          <div class="col-4">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-outline-primary shadow-sm"
+            />
+          </div>
+        </div>
+      </form>
+      <div class="currentConditions">
+        <h1 id="location">London</h1>
+        <div class="dateTime">
+          <span id="current-day">Weekday</span>
+          <span id="current-time">Time</span>
+        </div>
+        <p>Feels like <span id="feelsLike">-4</span>°C</p>
+      </div>
+      <div class="row tempAndEffects">
+        <div class="col-8 currentTemp">
+          <span id="temperature">-2</span>
+          <span class="units"><a href="#">°C</a> | <a href="#">°F</a></span>
+        </div>
+        <div class="col-4 tempEffects">
+          <p>
+            Wind <span id="wind">5</span>km/h<br />Humidity
+            <span id="humidity">79</span>%<br />
+          </p>
+        </div>
+      </div>
+      <div class="row weeklyForecast">
+        <div class="col day">
+          Monday<br /><i class="fa-solid fa-cloud"></i
+          ><i class="fa-solid fa-snowflake"></i><br />0°C
+        </div>
+        <div class="col day">
+          Tuesday<br /><i class="fa-solid fa-cloud"></i><br />2°C
+        </div>
+        <div class="col day">
+          Wednesday<br /><i class="fa-solid fa-cloud"> </i
+          ><i class="fa-solid fa-snowflake"></i><br />5°C
+        </div>
+        <div class="col day">
+          Thursday<br /><i class="fa-solid fa-cloud-sun"></i><br />2°C
+        </div>
+        <div class="col day">
+          Friday<br /><i class="fa-solid fa-cloud"> </i
+          ><i class="fa-solid fa-snowflake"></i><br />-2°C
+        </div>
+      </div>
+      <button
+        id="current-location"
+        class="form-control btn btn-outline-primary shadow-sm"
+      >
+        Current Location
+      </button>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

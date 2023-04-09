@@ -1,0 +1,49 @@
+body {
+  font-family: "Raleway", sans-serif;
+  max-width: 700px;
+  margin: 0 auto;
+}
+p {
+  margin-bottom: 0px;
+}
+a {
+  text-decoration: none;
+}
+button {
+  margin: 20px auto;
+}
+#search-form {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#temperature {
+  font-size: 70px;
+  line-height: 65px;
+}
+.cities {
+  padding: 20px;
+  text-align: center;
+  color: #312e73;
+}
+.currentConditions h1 {
+  color: #312e73;
+}
+.dateTime,
+p {
+  color: #0069d9;
+}
+.tempAndEffects {
+  color: #312e73;
+  padding-bottom: 20px;
+}
+
+.units {
+  position: relative;
+  top: -30px;
+}
+.weeklyForecast {
+  color: #0069d9;
+}
+.day {
+  text-align: center;
+}

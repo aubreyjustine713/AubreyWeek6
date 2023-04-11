@@ -8,6 +8,7 @@ p {
 }
 a {
   text-decoration: none;
+  font-weight: 500;
 }
 button {
   margin: 20px auto;
